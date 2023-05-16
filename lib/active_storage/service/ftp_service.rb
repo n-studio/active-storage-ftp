@@ -6,7 +6,7 @@ module ActiveStorage
       @config = config
     end
 
-    def upload(key, io, checksum: nil, content_type: nil, disposition: nil, filename: nil)
+    def upload(key, io, checksum: nil, content_type: nil, disposition: nil, filename: nil, **)
       instrument :upload, key: key, checksum: checksum do
         connection do |ftp|
           ftp.put(io, key)
