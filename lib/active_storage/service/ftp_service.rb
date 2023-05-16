@@ -109,7 +109,7 @@ module ActiveStorage
         password: ftp_password,
         port: ftp_port,
         passive: ftp_passive,
-        # ssl: ftp_ssl,
+        ssl: ftp_ssl,
         # debug_mode: ftp_debug_mode
       ) do |ftp|
         begin
